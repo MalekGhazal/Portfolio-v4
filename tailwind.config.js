@@ -41,7 +41,7 @@ export default {
   daisyui: {
     themes: false,
     darkTheme: 'dark',
-    base: false, // applies background color and foreground color for root element by default
-    styled: true, // include daisyUI colors and design decisions for all components
+    base: false,
+    styled: true,
   },
 };
