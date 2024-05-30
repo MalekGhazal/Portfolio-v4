@@ -14,6 +14,8 @@ export const HeroParallax = ({
   projects: {
     title: string;
     link: string;
+    tags: string;
+    description: string;
     imagePath: string;
   }[];
 }) => {
@@ -103,12 +105,12 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        The Ultimate <br /> development studio
+        My latest <br /> development work
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+        I like to keep learning new technologies and frameworks, I've built a
+        lot and learned a lot. You can find my recent work here, and more on my
+        GitHub profile.
       </p>
     </div>
   );
@@ -121,6 +123,8 @@ export const ProjectCard = ({
   project: {
     title: string;
     link: string;
+    tags: string;
+    description: string;
     imagePath: string;
   };
   translate: MotionValue<number>;
@@ -134,7 +138,7 @@ export const ProjectCard = ({
         y: -20,
       }}
       key={project.title}
-      className="group/project h-96 w-[30rem] relative flex-shrink-0"
+      className="group/project h-60 w-[16rem] lg:h-96 lg:w-[32rem] relative flex-shrink-0 rounded-lg"
     >
       <a
         href={project.link}
@@ -144,14 +148,29 @@ export const ProjectCard = ({
       >
         <img
           src={project.imagePath}
-          className="object-cover object-left-top absolute h-full w-full inset-0"
+          className="object-cover absolute h-full w-full inset-0 rounded-lg"
           alt={project.title}
         />
       </a>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/project:opacity-80 bg-black pointer-events-none"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/project:opacity-100 text-white">
-        {project.title}
-      </h2>
+      <div className="absolute bottom-4 left-4 space-y-2">
+        <div className="flex flex-wrap gap-2">
+          {project.tags.split(',').map((tag, index) => (
+            <span
+              key={index}
+              className="opacity-0 group-hover/project:opacity-100 bg-white text-black px-2 py-1 font-semibold uppercase text-xs rounded-full"
+            >
+              {tag.trim()}
+            </span>
+          ))}
+        </div>
+        <h2 className="opacity-0 group-hover/project:opacity-100 text-white font-bold">
+          {project.title}
+        </h2>
+        <p className="opacity-0 group-hover/project:opacity-100 text-white text-xs">
+          {project.description}
+        </p>
+      </div>
     </motion.div>
   );
 };

@@ -1,11 +1,11 @@
 const projects = [
   {
     id: 1,
-    title: 'JAMQ',
-    description: 'Make up artist portfolio',
-    tags: 'React, Tailwind',
-    link: 'https://jehanassi.fr/',
-    imagePath: '/images/jamq.png',
+    title: 'Portfolio-v1',
+    description: 'My First Portfolio Ever',
+    tags: 'HTML, CSS, JS',
+    link: 'https://github.com/MalekGhazal/first-Portfolio',
+    imagePath: '/images/portfolio-v1.png',
   },
   {
     id: 2,
@@ -33,11 +33,11 @@ const projects = [
   },
   {
     id: 5,
-    title: 'E-commerce',
-    description: 'MERN E-comm Website',
-    tags: 'NodeJs, React, Express, MongoDB, Stripe',
-    link: 'https://github.com/MalekGhazal/transactional-web-project-MalekGhazal',
-    imagePath: '/images/ecomm.png',
+    title: 'Coming Soon...',
+    description: 'Coming Soon ...',
+    tags: 'PHP, Laravel, React',
+    link: 'https://github.com/MalekGhazal',
+    imagePath: '/images/laravel.png',
   },
   {
     id: 6,
@@ -49,11 +49,11 @@ const projects = [
   },
   {
     id: 7,
-    title: 'Portfolio-v1',
-    description: 'My First Portfolio Ever',
-    tags: 'HTML, CSS, JS',
-    link: 'https://github.com/MalekGhazal/first-Portfolio',
-    imagePath: '/images/portfolio-v1.png',
+    title: 'E-commerce',
+    description: 'MERN E-comm Website',
+    tags: 'NodeJs, React, Express, MongoDB, Stripe',
+    link: 'https://github.com/MalekGhazal/transactional-web-project-MalekGhazal',
+    imagePath: '/images/ecomm.png',
   },
   {
     id: 8,
@@ -65,11 +65,11 @@ const projects = [
   },
   {
     id: 9,
-    title: 'Coming Soon...',
-    description: 'Coming Soon ...',
-    tags: 'PHP, Laravel, React',
-    link: 'https://github.com/MalekGhazal',
-    imagePath: '/images/laravel.png',
+    title: 'JAMQ',
+    description: 'Make up artist portfolio',
+    tags: 'React, Tailwind',
+    link: 'https://jehanassi.fr/',
+    imagePath: '/images/jamq.png',
   },
 ];
 
