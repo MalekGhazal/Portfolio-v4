@@ -25,37 +25,39 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>About</a>
+                <a href="#about">About</a>
               </li>
               <li>
-                <a>Skills</a>
+                <a href="#skills">Skills</a>
               </li>
               <li>
-                <a>Projects</a>
+                <a href="#projects">Projects</a>
               </li>
               <li>
-                <a>Contact</a>
+                <a href="#contact">Contact</a>
               </li>
               <li>
                 <a>Blog</a>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Malek.</a>
+          <a href="/" className="btn btn-ghost text-xl">
+            Malek.
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a>Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a>Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <a>Contact</a>
+              <a href="#contact">Contact</a>
             </li>
             <li>
               <a>Blog</a>
@@ -63,7 +65,13 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Resume</a>
+          <a
+            href="/files/Resume.pdf"
+            download="Malek's Resume.pdf"
+            className="btn"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </>

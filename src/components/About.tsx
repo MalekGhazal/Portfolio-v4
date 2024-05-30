@@ -1,8 +1,23 @@
-const About = () => {
+import React from 'react';
+import { motion } from 'framer-motion';
+
+const About: React.FC = () => {
   return (
     <>
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical px-4 lg:px-0 lg:max-w-screen-xl mx-auto">
-        <li>
+      <ul
+        id="about"
+        className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical px-4 lg:px-0 lg:max-w-screen-xl mx-auto"
+      >
+        <motion.li
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 50 },
+          }}
+        >
           <div className="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +48,17 @@ const About = () => {
             tailored to clients' visions.
           </div>
           <hr />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 50 },
+          }}
+        >
           <hr />
           <div className="timeline-middle">
             <svg
@@ -66,8 +90,17 @@ const About = () => {
             reach target audiences.
           </div>
           <hr />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 50 },
+          }}
+        >
           <hr />
           <div className="timeline-middle">
             <svg
@@ -97,8 +130,17 @@ const About = () => {
             Worked with different teams on various projects and applications.
           </div>
           <hr />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 50 },
+          }}
+        >
           <hr />
           <div className="timeline-middle">
             <svg
@@ -134,8 +176,17 @@ const About = () => {
             and scalability.
           </div>
           <hr />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 50 },
+          }}
+        >
           <hr />
           <div className="timeline-middle">
             <svg
@@ -168,7 +219,7 @@ const About = () => {
             contributing to the long-term sustainability of the software
             projects.
           </div>
-        </li>
+        </motion.li>
       </ul>
     </>
   );
