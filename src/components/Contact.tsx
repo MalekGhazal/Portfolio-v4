@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Label } from '../components/ui/label';
 import { Input } from '../components/ui/input';
+import { Textarea } from '../components/ui/textarea';
 import { cn } from '../lib/utils';
 import { IconBrandGithub, IconBrandGoogle } from '@tabler/icons-react';
 import Alert from './Alert';
@@ -63,11 +64,10 @@ export default function Contact() {
             </LabelInputContainer>
             <LabelInputContainer className="mb-4">
               <Label htmlFor="message">Your Message</Label>
-              <Input
+              <Textarea
                 id="message"
                 placeholder="Write your message here ..."
-                type="text"
-              />
+              ></Textarea>
             </LabelInputContainer>
 
             <button

@@ -2,7 +2,7 @@ const Alert = () => {
   return (
     <div
       role="alert"
-      className="alert alert-success absolute left-1/2 transform -translate-x-1/2 translate-y-2 w-max flex items-center h-12"
+      className="alert alert-success fixed top-4 left-1/2 transform -translate-x-1/2 translate-y-2 w-max flex items-center h-12 z-50"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
