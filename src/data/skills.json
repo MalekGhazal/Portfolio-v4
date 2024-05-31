@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "designation": "Front End",
+    "image": "/icons/html5.svg"
+  },
+  {
+    "id": 2,
+    "name": "CSS",
+    "designation": "Front End",
+    "image": "/icons/css-3.svg"
+  },
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "designation": "Front End",
+    "image": "/icons/javascript.svg"
+  },
+  {
+    "id": 4,
+    "name": "React",
+    "designation": "Front End",
+    "image": "/icons/react.svg"
+  },
+  {
+    "id": 5,
+    "name": "NodeJs",
+    "designation": "Back End",
+    "image": "/icons/nodejs.svg"
+  },
+  {
+    "id": 6,
+    "name": "Bootstrap",
+    "designation": "Front End",
+    "image": "/icons/bootstrap.svg"
+  },
+  {
+    "id": 7,
+    "name": "Tailwind",
+    "designation": "Front End",
+    "image": "/icons/tailwind.svg"
+  },
+  {
+    "id": 8,
+    "name": "REST APIs",
+    "designation": "Back End",
+    "image": "/icons/rest-api.svg"
+  },
+  {
+    "id": 9,
+    "name": "Java",
+    "designation": "Back End",
+    "image": "/icons/java.svg"
+  },
+  {
+    "id": 10,
+    "name": "SQL",
+    "designation": "Database",
+    "image": "/icons/sql.svg"
+  },
+  {
+    "id": 11,
+    "name": "Git",
+    "designation": "VCS",
+    "image": "/icons/git.svg"
+  },
+  {
+    "id": 12,
+    "name": "GitHub",
+    "designation": "VCS/CI/CD",
+    "image": "/icons/github.svg"
+  },
+  {
+    "id": 13,
+    "name": "Linux",
+    "designation": "OS/CLI",
+    "image": "/icons/linux.svg"
+  },
+  {
+    "id": 14,
+    "name": "PHP",
+    "designation": "Back End",
+    "image": "/icons/php.svg"
+  },
+  {
+    "id": 15,
+    "name": "Laravel",
+    "designation": "Full Stack",
+    "image": "/icons/laravel.svg"
+  },
+  {
+    "id": 16,
+    "name": "AWS",
+    "designation": "Cloud/S3/EC2",
+    "image": "/icons/aws.svg"
+  }
+]
