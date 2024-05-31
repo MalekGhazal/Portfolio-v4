@@ -5,6 +5,7 @@ import About from './components/About';
 import Footer from './layouts/Footer';
 import { HeroParallax } from './components/ui/hero-parallax';
 import projects from './data/projects';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <About />
       <HeroParallax projects={projects} />
+      <Contact />
       <Footer />
     </>
   );
