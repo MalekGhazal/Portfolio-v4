@@ -28,14 +28,14 @@ const Hero = () => {
 
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
-        className="hero min-h-screen bg-white dark:bg-black"
-      >
+      <div className="hero min-h-screen bg-white dark:bg-black">
         <div className="hero-content text-center text-black dark:text-white">
-          <div className="max-w-full">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+            className="max-w-full"
+          >
             <h1 className="text-6xl md:text-8xl font-bold">
               Malek's Portfolio
             </h1>
@@ -54,9 +54,9 @@ const Hero = () => {
               />
               <span className="slider"></span>
             </label>
-          </div>
+          </motion.div>
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };
