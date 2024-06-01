@@ -94,5 +94,29 @@
     "name": "AWS",
     "designation": "Cloud/S3/EC2",
     "image": "/icons/aws.svg"
+  },
+  {
+    "id": 17,
+    "name": "Springboot",
+    "designation": "Back End",
+    "image": "/icons/spring.svg"
+  },
+  {
+    "id": 18,
+    "name": "MongoDB",
+    "designation": "NoSQL DB",
+    "image": "/icons/mongodb.svg"
+  },
+  {
+    "id": 19,
+    "name": "C#",
+    "designation": "Back End",
+    "image": "/icons/csharp.svg"
+  },
+  {
+    "id": 20,
+    "name": "TypeScript",
+    "designation": "Full Stack",
+    "image": "/icons/typescript.svg"
   }
 ]

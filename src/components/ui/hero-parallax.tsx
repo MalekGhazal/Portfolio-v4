@@ -153,6 +153,7 @@ export const ProjectCard = ({
           src={project.imagePath}
           className="object-cover absolute h-full w-full inset-0 rounded-lg"
           alt={project.title}
+          loading="lazy"
         />
       </a>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/project:opacity-80 bg-black pointer-events-none"></div>
