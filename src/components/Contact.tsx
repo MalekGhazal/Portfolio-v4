@@ -7,14 +7,14 @@ import { cn } from '../lib/utils';
 import { IconBrandGithub, IconBrandGoogle } from '@tabler/icons-react';
 import Alert from './Alert';
 import Earth from './Earth';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
-  const [alertVisible, setAlertVisible] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log('Form submitted');
-  };
+  const [alert, setAlert] = useState<{
+    message: string;
+    bgColor: string;
+    textColor: string;
+  } | null>(null);
 
   const handleGithubClick = () => {
     window.open('https://github.com/MalekGhazal', '_blank');
@@ -24,9 +24,13 @@ export default function Contact() {
     const email = 'ghazal.malek@gmail.com';
     navigator.clipboard.writeText(email).then(
       () => {
-        setAlertVisible(true);
+        setAlert({
+          message: 'Email copied to clipboard.',
+          bgColor: 'green',
+          textColor: 'white',
+        });
         setTimeout(() => {
-          setAlertVisible(false);
+          setAlert(null);
         }, 3000);
       },
       (err) => {
@@ -35,19 +39,58 @@ export default function Contact() {
     );
   };
 
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_varnm28',
+        'template_pr4tud2',
+        '#contactForm',
+        'uBdLjeM1Nv0eEvaK-'
+      )
+      .then((result: { text: string }) => {
+        console.log('Email sent successfully:', result.text);
+        setAlert({
+          message: 'Message Has Been Sent Successfully!',
+          bgColor: 'green',
+          textColor: 'white',
+        });
+        setTimeout(() => {
+          setAlert(null);
+        }, 3000);
+      })
+      .catch((error: { message: string }) => {
+        console.error('Error sending email:', error.message);
+        setAlert({
+          message: 'Error sending your message',
+          bgColor: 'red',
+          textColor: 'white',
+        });
+        setTimeout(() => {
+          setAlert(null);
+        }, 3000);
+      });
+
+    e.currentTarget.reset();
+  };
+
   return (
     <>
-      <div id="contact" className="flex items-center justify-center flex-wrap">
+      <div
+        id="contact"
+        className="flex items-center justify-center flex-wrap bg-white dark:bg-black"
+      >
         <Earth />
-        <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
-          <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
+        <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input dark:bg-white bg-black">
+          <h2 className="font-bold text-xl text-neutral-200 dark:text-neutral-800">
             Get in touch!
           </h2>
-          <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
+          <p className="text-neutral-300 text-sm max-w-sm mt-2 dark:text-neutral-600">
             If you have any questions, or just want to chat, send me a message.
           </p>
 
-          <form className="my-8" onSubmit={handleSubmit}>
+          <form id="contactForm" className="my-8" onSubmit={sendEmail}>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
               <LabelInputContainer>
                 <Label htmlFor="firstname">First name</Label>
@@ -66,12 +109,13 @@ export default function Contact() {
               <Label htmlFor="message">Your Message</Label>
               <Textarea
                 id="message"
+                name="message"
                 placeholder="Write your message here ..."
               ></Textarea>
             </LabelInputContainer>
 
             <button
-              className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+              className="dark:bg-gradient-to-br relative group/btn bg-gray-50 dark:from-black dark:to-neutral-600 block dark:bg-zinc-800  w-full text-black dark:text-white rounded-md h-10 font-medium dark:shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
               type="submit"
             >
               Send &rarr;
@@ -104,7 +148,13 @@ export default function Contact() {
                 <BottomGradient />
               </button>
             </div>
-            {alertVisible && <Alert />}
+            {alert && (
+              <Alert
+                message={alert.message}
+                bgColor={alert.bgColor}
+                textColor={alert.textColor}
+              />
+            )}
           </form>
         </div>
       </div>

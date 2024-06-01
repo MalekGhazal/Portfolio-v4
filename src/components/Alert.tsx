@@ -1,8 +1,15 @@
-const Alert = () => {
+interface AlertProps {
+  message: string;
+  bgColor: string;
+  textColor: string;
+}
+
+const Alert: React.FC<AlertProps> = ({ message, bgColor, textColor }) => {
   return (
     <div
       role="alert"
       className="alert alert-success fixed top-4 left-1/2 transform -translate-x-1/2 translate-y-2 w-max flex items-center h-12 z-50"
+      style={{ backgroundColor: `${bgColor}`, color: `${textColor}` }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +24,7 @@ const Alert = () => {
           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
         />
       </svg>
-      <span>Email copied to clipboard</span>
+      <span>{message}</span>
     </div>
   );
 };

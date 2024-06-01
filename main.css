@@ -7,12 +7,54 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-::-moz-selection {
+.dark ::-moz-selection {
+  color: black;
+  background: white;
+}
+
+.dark ::selection {
   color: black;
   background: white;
 }
 
 ::selection {
-  color: black;
-  background: white;
+  color: white;
+  background: black;
+}
+
+::-moz-selection {
+  color: white;
+  background: black;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #adaeaf;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #000;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #191e24;
 }

@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
     <>
-      <footer className="footer items-center p-4 mt-10 text-neutral-content">
+      <footer className="footer items-center p-4 pt-12 text-neutral-content bg-white dark:bg-black">
         <aside className="items-center mx-auto grid-flow-col">
-          <mark className="bg-white rounded-md py-0.5 px-2">
-            <p className="font-semibold">Malek.</p>
+          <mark className="dark:bg-white bg-black rounded-md py-0.5 px-2">
+            <p className="font-semibold dark:text-black text-white">Malek.</p>
           </mark>
           <p>
             Copyright &copy; {new Date().getFullYear()} - All right reserved
@@ -15,7 +15,7 @@ const Footer = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
-              className="fill-current text-gray-400 hover:text-white"
+              className="fill-current dark:text-gray-400 dark:hover:text-white text-black hover:text-gray-600"
               width={30}
               height={30}
             >
@@ -26,7 +26,7 @@ const Footer = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
-              className="fill-current text-gray-400 hover:text-white"
+              className="fill-current dark:text-gray-400 dark:hover:text-white text-black hover:text-gray-600"
               width={30}
               height={30}
             >
@@ -37,7 +37,7 @@ const Footer = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
-              className="fill-current text-gray-400 hover:text-white"
+              className="fill-current dark:text-gray-400 dark:hover:text-white text-black hover:text-gray-600"
               width={30}
               height={30}
             >

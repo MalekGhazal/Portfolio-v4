@@ -1,10 +1,14 @@
 const Navbar = () => {
   return (
     <>
-      <div className="navbar bg-black">
+      <div className="navbar bg-white dark:bg-black">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost lg:hidden text-black dark:text-white"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -41,12 +45,15 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a href="/" className="btn btn-ghost text-xl">
+          <a
+            href="/"
+            className="btn btn-ghost text-xl text-black dark:text-white"
+          >
             Malek.
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-black dark:text-white">
             <li>
               <a href="#about">About</a>
             </li>
@@ -68,7 +75,7 @@ const Navbar = () => {
           <a
             href="/files/Resume.pdf"
             download="Malek's Resume.pdf"
-            className="btn"
+            className="btn text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white bg-white dark:bg-base-100"
           >
             Resume
           </a>
