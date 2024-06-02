@@ -40,7 +40,7 @@ const Hero = () => {
               Malek's Portfolio
             </h1>
             <p className="py-6 text-lg max-w-md mx-auto">
-              Hi there, Im Malek Kazal, a{' '}
+              Hi there, Im Malek Kazal, <br />
               <mark className="dark:bg-white bg-black text-white dark:text-black rounded-md p-0.5">
                 Full-Stack Developer.
               </mark>

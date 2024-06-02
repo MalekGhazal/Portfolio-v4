@@ -19,7 +19,7 @@ const Skills = () => {
     <>
       <div
         id="skills"
-        className="flex items-center bg-white dark:bg-black text-black dark:text-white flex-col h-screen lg:flex-row justify-around gap-10 lg:gap-0 w-full my-32 md:my-0"
+        className="flex items-center bg-white dark:bg-black text-black dark:text-white flex-col h-screen lg:flex-row justify-around gap-10 lg:gap-0 w-full md:my-0"
       >
         <motion.div
           initial={{ opacity: 0 }}
