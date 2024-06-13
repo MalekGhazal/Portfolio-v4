@@ -1,4 +1,9 @@
+import LanguageSwitcher from '@/components/LanguageSwitch';
+import { useTranslation } from 'react-i18next';
+
 const Navbar = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="navbar bg-white dark:bg-black">
@@ -29,16 +34,16 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a href="#about">About</a>
+                <a href="#about">{t('about')}</a>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <a href="#skills">{t('skills')}</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects">{t('projects')}</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact">{t('contact')}</a>
               </li>
               <li>
                 <a>Blog</a>
@@ -55,29 +60,30 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-black dark:text-white">
             <li>
-              <a href="#about">About</a>
+              <a href="#about">{t('about')}</a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">{t('skills')}</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects">{t('projects')}</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact">{t('contact')}</a>
             </li>
             <li>
               <a>Blog</a>
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end gap-x-4">
+          <LanguageSwitcher />
           <a
             href="/files/Resume.pdf"
             download="Malek's Resume.pdf"
             className="btn text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white bg-white dark:bg-base-100"
           >
-            Resume
+            {t('resume')}
           </a>
         </div>
       </div>
