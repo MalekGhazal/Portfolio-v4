@@ -18,7 +18,7 @@ const LanguageSwitcher: React.FC = () => {
   };
 
   return (
-    <div className="checkbox-wrapper-8">
+    <div className="checkbox-wrapper-8 btn w-16 text-black dark:text-white hover:dark:bg-white hover:dark:text-black hover:bg-black hover:text-white bg-white dark:bg-base-100">
       <input
         type="checkbox"
         id="cb3-8"

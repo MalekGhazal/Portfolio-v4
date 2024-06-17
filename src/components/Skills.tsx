@@ -2,6 +2,7 @@
 import { AnimatedTooltip } from '../components/ui/animated-tooltip';
 import skills from '../data/skills.json';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const fadeInAnimationVariants = {
   initial: {
@@ -15,6 +16,8 @@ const fadeInAnimationVariants = {
 };
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div
@@ -28,11 +31,10 @@ const Skills = () => {
           className="max-w-7xl text-center lg:text-start mx-auto"
         >
           <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-            Skills <br /> and experience
+            {t('skills')} <br /> {t('experience')}
           </h1>
           <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-            My skills and knowledge in different fields, languages, frameworks,
-            and technologies.
+            {t('skills-body')}
           </p>
         </motion.div>
         <div className="flex flex-wrap gap-12 lg:gap-20 items-center justify-center lg:justify-start w-full lg:w-1/2 px-5">

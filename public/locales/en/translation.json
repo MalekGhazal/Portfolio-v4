@@ -6,5 +6,19 @@
   "about": "About",
   "skills": "Skills",
   "projects": "Projects",
-  "contact": "Contact"
+  "contact": "Contact",
+  "my-latest": "My latest",
+  "development-work": "development work",
+  "projects-body": "I like to keep learning new technologies and frameworks, I've built a lot and learned a lot. You can find my recent work here, and more on my GitHub profile.",
+  "experience": "and experience",
+  "skills-body": "My skills and knowledge in different fields, languages, frameworks, and technologies.",
+  "touch": "Get in touch!",
+  "contact-body": "If you have any questions, or just want to chat, send me a message.",
+  "firstName": "First name",
+  "lastName": "Last name",
+  "email": "Email Address",
+  "message": "Your Message",
+  "send": "Send",
+  "connect": "Let's Connect!",
+  "connect-body": "This globe is interactive and customizable. Have fun with it, huge thanks to Aceternity UI team."
 }

@@ -8,8 +8,11 @@ import { IconBrandGithub, IconBrandGoogle } from '@tabler/icons-react';
 import Alert from './Alert';
 import Earth from './Earth';
 import emailjs from 'emailjs-com';
+import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   const [alert, setAlert] = useState<{
     message: string;
     bgColor: string;
@@ -84,29 +87,29 @@ export default function Contact() {
         <Earth />
         <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input dark:bg-white bg-black">
           <h2 className="font-bold text-xl text-neutral-200 dark:text-neutral-800">
-            Get in touch!
+            {t('touch')}
           </h2>
           <p className="text-neutral-300 text-sm max-w-sm mt-2 dark:text-neutral-600">
-            If you have any questions, or just want to chat, send me a message.
+            {t('contact-body')}
           </p>
 
           <form id="contactForm" className="my-8" onSubmit={sendEmail}>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
               <LabelInputContainer>
-                <Label htmlFor="firstname">First name</Label>
+                <Label htmlFor="firstname">{t('firstName')}</Label>
                 <Input id="firstname" placeholder="Malek" type="text" />
               </LabelInputContainer>
               <LabelInputContainer>
-                <Label htmlFor="lastname">Last name</Label>
+                <Label htmlFor="lastname">{t('lastName')}</Label>
                 <Input id="lastname" placeholder="Kazal" type="text" />
               </LabelInputContainer>
             </div>
             <LabelInputContainer className="mb-4">
-              <Label htmlFor="email">Email Address</Label>
+              <Label htmlFor="email">{t('email')}</Label>
               <Input id="email" placeholder="youremail@host.com" type="email" />
             </LabelInputContainer>
             <LabelInputContainer className="mb-4">
-              <Label htmlFor="message">Your Message</Label>
+              <Label htmlFor="message">{t('message')}</Label>
               <Textarea
                 id="message"
                 name="message"
@@ -118,7 +121,7 @@ export default function Contact() {
               className="dark:bg-gradient-to-br relative group/btn bg-gray-50 dark:from-black dark:to-neutral-600 block dark:bg-zinc-800  w-full text-black dark:text-white rounded-md h-10 font-medium dark:shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
               type="submit"
             >
-              Send &rarr;
+              {t('send')} &rarr;
               <BottomGradient />
             </button>
 

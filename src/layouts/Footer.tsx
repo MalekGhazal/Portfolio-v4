@@ -7,7 +7,7 @@ const Footer = () => {
             <p className="font-semibold dark:text-black text-white">Malek.</p>
           </mark>
           <p>
-            Copyright &copy; {new Date().getFullYear()} - All right reserved
+            Copyright &copy; {new Date().getFullYear()} - All rights reserved
           </p>
         </aside>
         <nav className="grid-flow-col mx-auto gap-4 md:place-self-center md:justify-self-end">

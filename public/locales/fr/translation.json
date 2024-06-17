@@ -6,5 +6,19 @@
   "about": "À propos",
   "skills": "Compétences",
   "projects": "Projets",
-  "contact": "Contacter"
+  "contact": "Contacter",
+  "my-latest": "Mes derniers",
+  "development-work": "travaux de développement",
+  "projects-body": "J'aime apprendre de nouvelles technologies et de nouveaux frameworks, j'ai beaucoup construit et beaucoup appris. Vous pouvez trouver mes travaux récents ici, et plus sur mon profil GitHub.",
+  "experience": "et expérience",
+  "skills-body": "Mes compétences et connaissances dans différents domaines, langages, cadres et technologies.",
+  "touch": "Prenez contact avec nous!",
+  "contact-body": "Si vous avez des questions, ou si vous voulez simplement discuter, envoyez-moi un message.",
+  "firstName": "Prénom",
+  "lastName": "Nom de famille",
+  "email": "Courriel",
+  "message": "Votre message",
+  "send": "Envoyer",
+  "connect": "Connectez-vous!",
+  "connect-body": "Ce globe est interactif et personnalisable. Amusez-vous avec, un grand merci à l'équipe d'Aceternity UI."
 }

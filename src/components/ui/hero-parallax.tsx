@@ -7,6 +7,7 @@ import {
   useSpring,
   MotionValue,
 } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 export const HeroParallax = ({
   projects,
@@ -102,18 +103,18 @@ export const HeroParallax = ({
 };
 
 export const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <div
       id="projects"
       className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0"
     >
       <h1 className="text-2xl md:text-7xl font-bold text-black dark:text-white">
-        My latest <br /> development work
+        {t('my-latest')} <br /> {t('development-work')}
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 text-slate-950 dark:text-neutral-200">
-        I like to keep learning new technologies and frameworks, I've built a
-        lot and learned a lot. You can find my recent work here, and more on my
-        GitHub profile.
+        {t('projects-body')}
       </p>
     </div>
   );

@@ -1,12 +1,15 @@
 'use client';
 import { motion } from 'framer-motion';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const World = React.lazy(() =>
   import('./ui/globe').then((m) => ({ default: m.World }))
 );
 
 export default function GlobeDemo() {
+  const { t } = useTranslation();
+
   const globeConfig = {
     pointSize: 4,
     globeColor: '#062056',
@@ -411,11 +414,10 @@ export default function GlobeDemo() {
           className="div"
         >
           <h2 className="text-center text-xl md:text-4xl font-bold dark:text-white text-black">
-            Let's Connect!
+            {t('connect')}
           </h2>
           <p className="text-center text-base md:text-lg font-normal dark:text-neutral-200 text-neutral-800 max-w-md mt-2 mx-auto">
-            This globe is interactive and customizable. Have fun with it, huge
-            thanks to Aceternity UI team.
+            {t('connect-body')}
           </p>
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
