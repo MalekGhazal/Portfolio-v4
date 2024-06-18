@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const About: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="bg-white dark:bg-black text-black dark:text-white">
@@ -35,18 +38,14 @@ const About: React.FC = () => {
             </div>
             <div className="timeline-start md:text-end mb-10">
               <time className="font-mono">2016 - 2020</time>
-              <div className="text-lg font-extrabold">
-                Graphic Designer & Video Editor
-              </div>
-              Self-learned graphic design and video editing skills.
+              <div className="text-lg font-extrabold">{t('graphic')}</div>
+              {t('graphic-1')}
               <br />
-              Mastered Adobe Creative Cloud, particularly Photoshop,
-              Illustrator, After Effects, and Premiere Pro.
+              {t('graphic-2')}
               <br />
-              Managed client projects and requirements as a freelancer.
+              {t('graphic-3')}
               <br />
-              Crafted visually striking designs and captivating video content
-              tailored to clients' visions.
+              {t('graphic-4')}
             </div>
             <hr />
           </motion.li>
@@ -77,18 +76,14 @@ const About: React.FC = () => {
             </div>
             <div className="timeline-end mb-10">
               <time className="font-mono">2019 - 2021</time>
-              <div className="text-lg font-extrabold">
-                Shopify E-comm Strategist
-              </div>
-              Learned to create and manage websites and e-commerce stores on
-              Shopify.
+              <div className="text-lg font-extrabold">{t('shopify')}</div>
+              {t('shopify-1')}
               <br />
-              Spearheaded the launch and growth of multiple e-commerce ventures.
+              {t('shopify-2')}
               <br />
-              Self-learned Facebook advertising management techniques.
+              {t('shopify-3')}
               <br />
-              Applied strategic approaches to optimize advertising performance
-              and reach target audiences.
+              {t('shopify-4')}
             </div>
             <hr />
           </motion.li>
@@ -119,16 +114,14 @@ const About: React.FC = () => {
             </div>
             <div className="timeline-start md:text-end mb-10">
               <time className="font-mono">2022 - 2023</time>
-              <div className="text-lg font-extrabold">Vainer College</div>
-              Studied Software development at Vanier college in Montreal, QC for
-              a year and half.
+              <div className="text-lg font-extrabold">{t('vanier')}</div>
+              {t('vanier-1')}
               <br />
-              Graduated with an A.E.C certificate in Software applications
-              specialist.
+              {t('vanier-2')}
               <br />
-              Studied software design, SDLC, and full stack development.
+              {t('vanier-3')}
               <br />
-              Worked with different teams on various projects and applications.
+              {t('vanier-4')}
             </div>
             <hr />
           </motion.li>
@@ -160,21 +153,12 @@ const About: React.FC = () => {
             <div className="timeline-end mb-10">
               <time className="font-mono">2023</time>
               <div className="text-lg font-extrabold">
-                Full-Stack Dev. @KinoKlik
-              </div>
-              • Utilized the MERN Stack (MongoDB, Express.js, React, and
-              Node.js) for development tasks.
-              <br />
-              • Contributed to the enhancement of user experience and
-              streamlined content sharing processes.
-              <br />
-              • Played a significant role in designing and implementing the User
-              Interface of the platform.
-              <br />
-              • Set up Continuous Integration/Continuous Deployment (CI/CD)
-              pipelines to automate deployment processes.
-              <br />• Deployed the platform on Heroku for seamless accessibility
-              and scalability.
+                {t('kinoklik')}
+              </div>• {t('kinoklik-1')}
+              <br />• {t('kinoklik-2')}
+              <br />• {t('kinoklik-3')}
+              <br />• {t('kinoklik-4')}
+              <br />• {t('kinoklik-5')}
             </div>
             <hr />
           </motion.li>
@@ -206,19 +190,10 @@ const About: React.FC = () => {
             <div className="timeline-start md:text-end mb-10">
               <time className="font-mono">2023</time>
               <div className="text-lg font-extrabold">
-                Full-Stack Dev. @Algoseed Labs
-              </div>
-              • Utilized PHP and Laravel frameworks along with MySQL database to
-              develop robust and scalable backend solutions, ensuring optimal
-              performance and reliability of web applications.
-              <br />
-              • Demonstrated problem-solving skills by effectively diagnosing
-              and resolving backend bugs and issues, improving overall
-              application stability and user experience.
-              <br />• Played a key role in restructuring backend components to
-              enhance code organization, scalability, and maintainability,
-              contributing to the long-term sustainability of the software
-              projects.
+                {t('algoseed')}
+              </div>• {t('algoseed-1')}
+              <br />• {t('algoseed-2')}
+              <br />• {t('algoseed-3')}
             </div>
           </motion.li>
         </ul>
