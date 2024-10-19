@@ -3,7 +3,7 @@ import '../main.css';
 import Hero from './components/Hero';
 import About from './components/About';
 import Footer from './layouts/Footer';
-import { HeroParallax } from './components/ui/hero-parallax';
+import { HeroSection } from './components/ui/hero-parallax';
 import projects from './data/projects';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <HeroParallax projects={projects} />
+      <HeroSection projects={projects} />
       <Skills />
       <Contact />
       <Footer />

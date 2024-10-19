@@ -188,7 +188,7 @@ const About: React.FC = () => {
               </svg>
             </div>
             <div className="timeline-start md:text-end mb-10">
-              <time className="font-mono">2023</time>
+              <time className="font-mono">2023 - Now</time>
               <div className="text-lg font-extrabold">
                 {t('algoseed')}
               </div>• {t('algoseed-1')}
