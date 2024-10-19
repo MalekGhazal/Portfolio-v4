@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer items-center p-4 pt-12 text-neutral-content bg-white dark:bg-black">
-        <aside className="items-center mx-auto grid-flow-col">
+        <aside className="items-center mx-auto flex flex-col sm:flex-row">
           <mark className="dark:bg-white bg-black rounded-md py-0.5 px-2">
             <p className="font-semibold dark:text-black text-white">Malek.</p>
           </mark>
