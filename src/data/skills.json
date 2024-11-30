@@ -118,5 +118,29 @@
     "name": "TypeScript",
     "designation": "Full Stack",
     "image": "/icons/typescript.svg"
+  },
+  {
+    "id": 21,
+    "name": "WordPress",
+    "designation": "Websites",
+    "image": "/icons/wordpress.svg"
+  },
+  {
+    "id": 22,
+    "name": "Dart",
+    "designation": "Mobile Dev",
+    "image": "/icons/dart.svg"
+  },
+  {
+    "id": 23,
+    "name": "Flutter",
+    "designation": "Mobile Dev",
+    "image": "/icons/flutter.svg"
+  },
+  {
+    "id": 24,
+    "name": "Shopify",
+    "designation": "Ecommerce",
+    "image": "/icons/shopify.svg"
   }
 ]
