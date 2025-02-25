@@ -44,7 +44,7 @@ const projectToCard = (project: Project, index: number): Card => ({
       </a>
     </div>
   ),
-  className: 'bg-black rounded-xl',
+  className: 'bg-white dark:bg-black rounded-xl',
   thumbnail: project.imagePath,
 });
 
