@@ -26,11 +26,11 @@ const projects = [
   },
   {
     id: 4,
-    title: 'LMS',
-    description: 'Library Management System',
-    tags: 'C#, WinForms, SQL',
-    link: 'https://github.com/MalekGhazal/LMS-Project',
-    imagePath: '/images/lms.png',
+    title: 'Maxx Media',
+    description: 'Reputation Management Agency',
+    tags: 'WordPress, PHP',
+    link: 'https://maxxmedia.ca/',
+    imagePath: '/images/maxxmedia.png',
   },
   {
     id: 5,
@@ -47,6 +47,30 @@ const projects = [
     tags: 'NodeJs, React, Express, MongoDB, Stripe',
     link: 'https://github.com/MalekGhazal/transactional-web-project-MalekGhazal',
     imagePath: '/images/ecomm.png',
+  },
+  {
+    id: 7,
+    title: 'Wraptix',
+    description: 'Car Wash | Autospa',
+    tags: 'WordPress, PHP',
+    link: 'https://wraptixautospa.ca/',
+    imagePath: '/images/wraptix.png',
+  },
+  {
+    id: 8,
+    title: 'Auvent Dore',
+    description: 'Awning Business',
+    tags: 'HTML, CSS, JavaScript',
+    link: 'https://www.auventdore.com/',
+    imagePath: '/images/auventdore.png',
+  },
+  {
+    id: 9,
+    title: 'Webelle',
+    description: 'Creative Agency',
+    tags: 'HTML, CSS, JavaScript',
+    link: 'https://webelle.ca/',
+    imagePath: '/images/webelle.png',
   },
 ];
 
