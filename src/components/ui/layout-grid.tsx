@@ -27,14 +27,14 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   return (
     <div className="min-h-screen p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full mx-auto gap-4 relative">
       {cards.map((card, i) => (
-        <div key={i} className={cn(card.className, 'aspect-[4/3]')}>
+        <div key={i} className={cn(card.className, 'aspect-[16/9]')}>
           <motion.div
             onClick={() => handleClick(card)}
             className={cn(
               card.className,
               'relative overflow-hidden h-full',
               selected?.id === card.id
-                ? 'rounded-xl cursor-pointer absolute inset-0 h-1/4 w-full md:h-2/3 md:w-2/3 m-auto z-50 flex justify-center items-center flex-wrap flex-col'
+                ? 'rounded-xl cursor-pointer absolute inset-0 h-1/4 md:h-2/3 w-full m-auto z-50 flex justify-center items-center flex-wrap flex-col'
                 : lastSelected?.id === card.id
                 ? 'z-40 bg-white rounded-xl h-full w-full cursor-pointer'
                 : 'bg-white rounded-xl h-full w-full cursor-pointer'

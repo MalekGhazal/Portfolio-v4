@@ -72,6 +72,22 @@ const projects = [
     link: 'https://webelle.ca/',
     imagePath: '/images/webelle.png',
   },
+  {
+    id: 10,
+    title: 'IUGO Chat',
+    description: 'Random Video Matching Web App',
+    tags: 'React, NodeJS, WebRTC, Socket.IO, Express, MongoDB, Tailwind, Agora',
+    link: 'https://www.iugochat.com/',
+    imagePath: '/images/IUGO.png',
+  },
+  {
+    id: 11,
+    title: 'Car Buyers',
+    description: 'Car Selling Service',
+    tags: 'WordPress, HTML, CSS, JavaScript',
+    link: 'https://car-buyers.ca/',
+    imagePath: '/images/CarBuyers.png',
+  },
 ];
 
 export default projects;
