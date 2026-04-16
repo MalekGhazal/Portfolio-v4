@@ -88,6 +88,14 @@ const projects = [
     link: 'https://car-buyers.ca/',
     imagePath: '/images/CarBuyers.png',
   },
+  {
+    id: 12,
+    title: 'EMPA BS',
+    description: 'Business Solutions Company',
+    tags: 'PHP, Laravel, HTML, CSS, JavaScript, MySQL',
+    link: 'https://empa-bs.com/',
+    imagePath: '/images/empa-bs.webp',
+  },
 ];
 
 export default projects;
