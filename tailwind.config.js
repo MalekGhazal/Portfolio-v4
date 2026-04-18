@@ -2,35 +2,24 @@ import tailwindcssAnimate from 'tailwindcss-animate';
 import daisyui from 'daisyui';
 import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function addVariablesForColors({ addBase, theme }: any) {
+function addVariablesForColors({ addBase, theme }) {
   const allColors = flattenColorPalette(theme('colors'));
   const newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
   );
-
-  addBase({
-    ':root': newVars,
-  });
+  addBase({ ':root': newVars });
 }
 
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ['class'],
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   prefix: '',
   theme: {
     container: {
       center: true,
       padding: '2rem',
-      screens: {
-        '2xl': '1400px',
-      },
+      screens: { '2xl': '1400px' },
     },
     extend: {
       keyframes: {
@@ -53,11 +42,10 @@ export default {
     },
   },
   plugins: [tailwindcssAnimate, daisyui, addVariablesForColors],
-
   daisyui: {
     themes: false,
     darkTheme: 'dark',
-    base: false,
+    base: true,
     styled: true,
   },
 };
