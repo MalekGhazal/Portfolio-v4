@@ -6,6 +6,11 @@
   NODE_VERSION = "22"
   NPM_FLAGS = "--legacy-peer-deps"
 
+# Disable Netlify's CSS/JS post-processing — Vite already handles minification.
+# Netlify's optimizer corrupts Tailwind/daisyUI output (double-minification).
+[build.processing]
+  skip_processing = true
+
 # The following redirect is intended for use with most SPAs that handle
 # routing internally.
 [[redirects]]
